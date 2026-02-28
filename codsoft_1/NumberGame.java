@@ -30,7 +30,7 @@ public class NumberGame {
                 attempts++;
 
                 if (userGuess == numberToGuess) {
-                    System.out.println("🎉 Correct! You guessed the number in " + attempts + " attempts.");
+                    System.out.println("Correct! You guessed the number in " + attempts + " attempts.");
                     totalScore += (maxAttempts - attempts + 1) * 10; // scoring logic
                     guessedCorrectly = true;
                     break;
@@ -44,7 +44,7 @@ public class NumberGame {
             }
 
             if (!guessedCorrectly) {
-                System.out.println("❌ You've used all attempts. The correct number was: " + numberToGuess);
+                System.out.println("You've used all attempts. The correct number was: " + numberToGuess);
             }
 
             System.out.println("Your current score: " + totalScore);
@@ -59,3 +59,4 @@ public class NumberGame {
         sc.close();
     }
 }
+
